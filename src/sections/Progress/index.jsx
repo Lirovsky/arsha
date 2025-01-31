@@ -17,10 +17,10 @@ export default function Progress() {
             incididunt ut labore et dolore magna aliqua.
           </p>
           <div className="w-full flex flex-col gap-5">
-            <Bar title="HTML" percentage="100" />
-            <Bar title="CSS" percentage="90" />
-            <Bar title="JAVASCRIPT" percentage="75" />
-            <Bar title="PHOTOSHOP" percentage="55" />
+            <Bar title="HTML" width="w-[100%]" percentage="100" />
+            <Bar title="CSS" width="w-[90%]" percentage="90" />
+            <Bar title="JAVASCRIPT" width="w-[75%]" percentage="75" />
+            <Bar title="PHOTOSHOP" width="w-[55%]" percentage="55" />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { PropTypes } from "prop-types";
 
-export default function Bar({ title, percentage }) {
+export default function Bar({ title, percentage, width }) {
   return (
     <div>
       <div className="flex justify-between text-sky-700 font-semibold">
@@ -8,7 +8,7 @@ export default function Bar({ title, percentage }) {
         <span>{percentage}%</span>
       </div>
       <div className="bg-sky-200 h-3 mt-1">
-        <div className={`bg-sky-700 w-[${percentage}%] h-full`}></div>
+        <div className={`bg-sky-700 ${width} h-full`}></div>
       </div>
     </div>
   );
@@ -17,4 +17,5 @@ export default function Bar({ title, percentage }) {
 Bar.propTypes = {
   title: PropTypes.string,
   percentage: PropTypes.string,
+  width: PropTypes.string,
 };
